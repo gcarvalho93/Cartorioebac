@@ -232,7 +232,7 @@ int main ()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
-		printf("\tDigite 0 para sair do programa\n\n"); 
+		printf("\t4 - Sair do programa\n\n"); 
 		printf("Opção: ");// Fim do menu
 		
 		scanf("%d", &opcao); //Solicitando e armazenando a escolha do usuario		
@@ -241,11 +241,6 @@ int main ()
 		//Validando resposta do usuário
 		switch(opcao)
 		{	
-			case 0:	
-				printf("Saindo do programa...\n\n");
-				system("pause");
-				iniciar_programa = false;
-			break;
 		
 			case 1:
 				registro();//Chama a função registro
@@ -257,6 +252,12 @@ int main ()
 			
 			case 3:
 				deletar();//Chama a função deletar
+			break;
+
+			case 4:	
+				printf("Obrigado por utilizar o programa!!\n\n");
+				system("pause");
+				iniciar_programa = false;
 			break;
 			
 			default:
